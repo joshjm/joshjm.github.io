@@ -6,8 +6,8 @@
     <div class="inner">
     <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
-        <h1 class="display-1 font-weight-thin mb-4">Joshua McDonald</h1>
-        <h4 class="subheading">- Science fed coder</h4>
+        <h1 class="display-4 font-weight-light mb-4">Joshua McDonald</h1>
+        <h4 class="subheading font-weight-thin display-1">- Science fed coder</h4>
       </v-col>
     </v-row>
     </div>
@@ -46,6 +46,7 @@ export default {
 h1, h4 {
     color: #fdf6e3;
 }
+
 #hero-banner {
     height: 700px;
 }
