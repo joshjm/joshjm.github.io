@@ -1,24 +1,12 @@
 # personal-site
 
-## Project setup
-```
-npm install
-```
+A simple repo to track my personal site and portfolio.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+live site is at https://joshjm.github.io/#/
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Project is a vue app, with vuetify componets and vue-router.
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Installation
+`npm i` to install, and `npm run serve` to start the dev server.
+`./deploy.sh` to build and push to the deploy branch.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
