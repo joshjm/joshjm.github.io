@@ -4,16 +4,16 @@
       Joshua Mcdonald
     </div>
     <v-spacer />
-    <v-btn class="mx-4" dark icon>
+    <v-btn class="mx-4"  icon>
       <v-icon> mdi-linkedin </v-icon>
     </v-btn>
-    <v-btn class="mx-4" dark icon>
+    <v-btn class="mx-4"  icon>
       <v-icon> mdi-github </v-icon>
     </v-btn>
-    <v-btn class="mx-4" dark icon>
+    <v-btn class="mx-4"  icon>
       <v-icon> mdi-email </v-icon>
     </v-btn>
-    <v-btn class="mx-4" dark icon>
+    <v-btn class="mx-4"  icon>
       <v-icon> mdi-twitter </v-icon>
     </v-btn>
     <v-spacer />

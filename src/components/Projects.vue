@@ -1,38 +1,58 @@
 <template>
-  <v-card
-    class="mx-auto"
-    max-width="344"
-  >
-    <v-img
-      src="https://cdn.vuetifyjs.com/images/cards/sunshine.jpg"
-      height="200px"
-    ></v-img>
+  <v-card class="mx-auto" max-width="344">
+    <v-carousel show-arrows-on-hover height="300px">
+      <v-carousel-item>
+        <v-img src="@/assets/safeblues/safeblues-1.png"></v-img>
+      </v-carousel-item>
+      <v-carousel-item>
+        <v-img src="@/assets/safeblues/safeblues-2.png"></v-img>
+      </v-carousel-item>
+    </v-carousel>
 
     <v-card-title>
-      Top western road trips
+      Safe Blues
+<v-spacer/>
+      <v-icon>
+  mdi-github
+</v-icon>
     </v-card-title>
 
     <v-card-subtitle>
-      1,000 miles of wonder
+      A modelling project where I built a dashboard to control and monitor a
+      experiment run at The University Of Queensland
     </v-card-subtitle>
+    <v-card-text>
+      <v-chip>
+        Plotly
+      </v-chip>
+      <v-chip>
+        Protobuf </v-chip
+      ><v-chip>
+        gRPC
+      </v-chip>
+      <v-chip>
+        <v-icon color="#3178C6">
+          mdi-language-typescript
+        </v-icon>
+      </v-chip>
+      <v-chip>
+        <v-icon color="#41B883">
+          mdi-vuejs
+        </v-icon>
+      </v-chip>
+    </v-card-text>
 
     <v-card-actions>
-      <v-btn text>Share</v-btn>
-
-      <v-btn
-        color="purple"
-        text
-      >
-        Explore
-      </v-btn>
-
+<v-icon>
+  mdi-github
+</v-icon>
       <v-spacer></v-spacer>
 
-      <v-btn
-        icon
-        @click="show = !show"
-      >
-        <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+      <v-card-subtitle @click="show = !show">
+        See more
+      </v-card-subtitle>
+      <v-btn icon @click="show = !show">
+        <v-icon>{{ show ? "mdi-chevron-up" : "mdi-chevron-down" }}</v-icon>
       </v-btn>
     </v-card-actions>
 
@@ -41,7 +61,12 @@
         <v-divider></v-divider>
 
         <v-card-text>
-          I'm a thing. But, like most politicians, he promised more than he could deliver. You won't have time for sleeping, soldier, not with all the bed making you'll be doing. Then we'll go with that data file! Hey, you add a one and two zeros to that or we walk! You're going to do his laundry? I've got to find a way to escape.
+          This is a project where I contributed to experiment design,
+          collaborated on editing papers and proposals, and priumarily worked on
+          front end software. I worked on creating a site for the purpose of
+          controlling models on AWS, admin control, users to see their stats,
+          sign ups, and displaying the growth of the coronavirus vs our teams
+          models.
         </v-card-text>
       </div>
     </v-expand-transition>
@@ -49,9 +74,11 @@
 </template>
 
 <script>
-  export default {
-    data: () => ({
-      show: false,
-    }),
-  }
+export default {
+  data: () => ({
+    show: false,
+    overlay: false,
+    image: ''
+  }),
+};
 </script>
