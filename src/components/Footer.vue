@@ -2,12 +2,10 @@
   <v-footer dark color="#073642">
     <v-row align="center" justify="space-around">
       <v-col cols="3">
-        <div>
-          <p>Joshua Mcdonald</p>
-        </div>
+        <p>Joshua Mcdonald</p>
       </v-col>
       <v-col cols="6" align-self="center">
-        <v-row>
+        <v-row justify="center" align="center">
           <p>
             Have an interesting project you are working on? Reach out and lets
             see how I can help.
@@ -27,11 +25,11 @@
 import SocialButtons from "@/components/SocialButtons.vue";
 export default {
   components: {
-    SocialButtons,
+    SocialButtons
   },
   data: () => ({
-    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"],
-  }),
+    icons: ["mdi-facebook", "mdi-twitter", "mdi-linkedin", "mdi-instagram"]
+  })
 };
 </script>
 
@@ -39,7 +37,6 @@ export default {
 p {
   text-align: center;
   font-size: 0.8em;
-
   color: #fdf6e3;
 }
 </style>

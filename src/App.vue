@@ -18,20 +18,18 @@ export default {
   name: "App",
 
   components: {
-    Footer,
+    Footer
     // Navbar,
   },
 
   data: () => ({
     //
-  }),
+  })
 };
 </script>
 
 <style scoped>
 v-app {
   min-height: 100%;
-  
 }
-
 </style>

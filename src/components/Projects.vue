@@ -1,28 +1,29 @@
 <template>
   <v-card class="mx-auto" max-width="344" center>
     <v-overlay :value="overlay">
-        <v-col align-content-center>
-          <!-- TODO: refactor images into data, and create these using a v-for -->
-      <v-carousel show-arrows-on-hover height="700px">
-        <v-carousel-item>
-          <v-img
-            width="700px"
-            src="@/assets/safeblues/safeblues-1.png"
-            @click="handleClick"
-          ></v-img>
-        </v-carousel-item>
-        <v-carousel-item>
-          <v-img
-            width="700px"
-            src="@/assets/safeblues/safeblues-2.png"
-            @click="handleClick"
-          ></v-img>
-        </v-carousel-item>
-      </v-carousel>
-
-      <v-btn icon @click="overlay = false">
-        <v-icon>mdi-close</v-icon>
-      </v-btn>
+      <v-col align-content-center>
+        <!-- TODO: refactor images into data, and create these using a v-for -->
+        <v-row>
+          <v-carousel show-arrows-on-hover height="700px">
+            <v-carousel-item>
+              <v-img
+                width="700px"
+                src="@/assets/safeblues/safeblues-1.png"
+              ></v-img>
+            </v-carousel-item>
+            <v-carousel-item>
+              <v-img
+                width="700px"
+                src="@/assets/safeblues/safeblues-2.png"
+              ></v-img>
+            </v-carousel-item>
+          </v-carousel>
+        </v-row>
+        <v-row justify="space-around">
+          <v-btn icon @click="overlay = false">
+            <v-icon>mdi-close</v-icon>
+          </v-btn>
+        </v-row>
       </v-col>
     </v-overlay>
 
@@ -42,14 +43,14 @@
     </v-carousel>
 
     <v-card-title>
-      {{title}}
+      {{ title }}
       <v-spacer />
       <v-icon>
         mdi-github
       </v-icon>
-<v-icon>
-      mdi-link-variant
-</v-icon>
+      <v-icon>
+        mdi-link-variant
+      </v-icon>
     </v-card-title>
 
     <v-card-subtitle>
@@ -77,7 +78,6 @@
     </v-card-text>
 
     <v-card-actions>
-   
       <v-spacer></v-spacer>
 
       <v-card-subtitle @click="show = !show">
@@ -107,9 +107,7 @@
 
 <script>
 export default {
-  props: [
-    'title'
-  ],
+  props: ["title"],
   data: () => ({
     show: false,
     overlay: false,
@@ -120,6 +118,9 @@ export default {
       this.overlay = !this.overlay;
       this.image = imagePath;
     },
+  },
+  created: function() {
+    window.addEventListener("keyup", this.handleClick);
   },
 };
 </script>

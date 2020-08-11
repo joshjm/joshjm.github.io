@@ -8,9 +8,13 @@
         <!-- About me -->
         <v-container>
           <v-row align="center">
-            <v-col cols="4">
+            <v-col md="4" cols="12">
               <v-row justify="center">
-                <v-img src="@/assets/profile.jpg" class="circle-img" width="90%" />
+                <v-img
+                  src="@/assets/profile.jpg"
+                  class="circle-img"
+                  width="90%"
+                />
               </v-row>
               <v-row justify="center">
                 <v-btn class="mx-4" icon>
@@ -27,7 +31,7 @@
                 </v-btn>
               </v-row>
             </v-col>
-            <v-col cols="8">
+            <v-col md="8" cols="12">
               <h1>About me</h1>
               <p>
                 A Physics, honours and ASPinS graduate looking to leverage a
@@ -71,7 +75,7 @@
             <v-col cols="12" lg="3" md="4" sm="6">
               <Projects title="Safe Blues" />
             </v-col>
-            <v-col cols="12" lg="3" md="4" sm="6">
+            <!-- <v-col cols="12" lg="3" md="4" sm="6">
               <Projects title="Notiv" />
             </v-col>
             <v-col cols="12" lg="3" md="4" sm="6">
@@ -85,7 +89,7 @@
             </v-col>
             <v-col cols="12" lg="3" md="4" sm="6">
               <Projects title="Cat/Dog Classifier" />
-            </v-col>
+            </v-col> -->
           </v-row>
         </v-container>
         <v-divider></v-divider>
@@ -113,8 +117,8 @@ export default {
     Hero,
     Projects,
     Timeline,
-    CommitPlot,
-  },
+    CommitPlot
+  }
 };
 </script>
 <style>
@@ -123,6 +127,6 @@ export default {
   max-width: 400px;
 }
 #content {
-    background-color: #f5f2e9;
-  }
+  background-color: #f5f2e9;
+}
 </style>
