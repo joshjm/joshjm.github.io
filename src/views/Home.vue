@@ -75,7 +75,7 @@
             <v-col cols="12" lg="3" md="4" sm="6">
               <Projects title="Safe Blues" />
             </v-col>
-            <!-- <v-col cols="12" lg="3" md="4" sm="6">
+            <v-col cols="12" lg="3" md="4" sm="6">
               <Projects title="Notiv" />
             </v-col>
             <v-col cols="12" lg="3" md="4" sm="6">
@@ -89,7 +89,7 @@
             </v-col>
             <v-col cols="12" lg="3" md="4" sm="6">
               <Projects title="Cat/Dog Classifier" />
-            </v-col> -->
+            </v-col>
           </v-row>
         </v-container>
         <v-divider></v-divider>

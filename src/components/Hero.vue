@@ -50,6 +50,8 @@ export default {
 }
 h1,
 h4 {
+  text-shadow: 0px 0px 2px #002B36,0px 0px 10px #002B36,0px 0px 20px #002B36;
+  text-shadow: 0px 0px 4px #000000;
   color: #fdf6e3;
 }
 

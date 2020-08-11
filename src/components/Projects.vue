@@ -27,7 +27,7 @@
       </v-col>
     </v-overlay>
 
-    <v-carousel show-arrows-on-hover height="300px">
+    <v-carousel show-arrows-on-hover height="300px" progress-color="progressColor">
       <v-carousel-item>
         <v-img
           src="@/assets/safeblues/safeblues-1.png"
@@ -112,15 +112,19 @@ export default {
     show: false,
     overlay: false,
     image: "",
+    progressColor: "#cb4b16"
   }),
   methods: {
     handleClick: function(imagePath) {
-      this.overlay = !this.overlay;
+      this.overlay = true;
       this.image = imagePath;
     },
+    handleEsc: function(){
+      this.overlay = false;
+    }
   },
   created: function() {
-    window.addEventListener("keyup", this.handleClick);
+    window.addEventListener("keyup", this.handleEsc);
   },
 };
 </script>
