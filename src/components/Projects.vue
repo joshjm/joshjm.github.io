@@ -47,6 +47,9 @@
       <v-icon>
         mdi-github
       </v-icon>
+<v-icon>
+      mdi-link-variant
+</v-icon>
     </v-card-title>
 
     <v-card-subtitle>
@@ -74,9 +77,7 @@
     </v-card-text>
 
     <v-card-actions>
-      <v-icon>
-        mdi-github
-      </v-icon>
+   
       <v-spacer></v-spacer>
 
       <v-card-subtitle @click="show = !show">

@@ -3,7 +3,7 @@
     <div class="vanta-container">
       <v-vanta effect="net" :options="options"></v-vanta>
     </div>
-    <div class="inner">
+    <v-container class="inner" :style="positionTextTopPaddingString">
     <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
         <h1 class="display-4 font-weight-light mb-4">Joshua McDonald</h1>
@@ -11,7 +11,7 @@
         <SocialButtons :dark="true" :light="false" />
       </v-col>
     </v-row>
-    </div>
+    </v-container>
   </div>
 </template>
 
@@ -34,7 +34,8 @@ export default {
         color: 0x2aa198,
         backgroundColor: 0x002b36,
       },
-      styleString: `height: ${window.innerHeight}px`
+      styleString: `height: ${window.innerHeight}px`,
+      positionTextTopPaddingString: `top: ${window.innerHeight/2 - 200}px`
     };
   },
 };
