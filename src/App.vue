@@ -1,7 +1,7 @@
 <template>
   <v-app>
     <!-- put the nav-bar here if i end up wanting one -->
-    <Navbar />
+    <!-- <Navbar /> -->
     <v-main>
       <router-view />
     </v-main>
@@ -12,14 +12,14 @@
 
 <script>
 import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+// // import Navbar from "@/components/Navbar";
 
 export default {
   name: "App",
 
   components: {
     Footer,
-    Navbar,
+    // Navbar,
   },
 
   data: () => ({
@@ -31,6 +31,7 @@ export default {
 <style scoped>
 v-app {
   min-height: 100%;
+  
 }
 
 </style>
