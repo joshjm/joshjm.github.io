@@ -137,12 +137,14 @@ export default {
 	   {
         title: "Couchers",
         subtitle:
-          "",
-        body: "",
-        liveLink: "",
-        githubRepoLink: "",
+          "A non-profit competitor to CouchSurfing",
+        body: "This is a non-profit and (soon to be) open source project that I was invited to join. So far my contributions to this awesome project have been refactoring, bug fixes and building out a versatile avatar component, as well as a 'where I have been' map component. Much of the stack of this org mirrors SafeBlues.",
+        liveLink: "https://couchers.org/",
+        githubRepoLink: "https://github.com/Couchers-org",
         chips: [
-          "",
+          "Vue.js",
+          "gRPC",
+          "Protobuf"
         ],
         images: [
           "",
