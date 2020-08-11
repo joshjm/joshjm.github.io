@@ -71,26 +71,7 @@
         <!-- Projects -->
         <v-container>
           <h1>My recent projects</h1>
-          <v-row>
-            <v-col cols="12" lg="3" md="4" sm="6">
               <Projects title="Safe Blues" />
-            </v-col>
-            <v-col cols="12" lg="3" md="4" sm="6">
-              <Projects title="Notiv" />
-            </v-col>
-            <v-col cols="12" lg="3" md="4" sm="6">
-              <Projects title="Couchers" />
-            </v-col>
-            <v-col cols="12" lg="3" md="4" sm="6">
-              <Projects title="Covid Co-op" />
-            </v-col>
-            <v-col cols="12" lg="3" md="4" sm="6">
-              <Projects title="Journey Planner" />
-            </v-col>
-            <v-col cols="12" lg="3" md="4" sm="6">
-              <Projects title="Cat/Dog Classifier" />
-            </v-col>
-          </v-row>
         </v-container>
         <v-divider></v-divider>
 
