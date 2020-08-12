@@ -60,7 +60,7 @@
           {{ project.subtitle }}
         </v-card-subtitle>
         <v-card-text>
-          <v-chip v-for="chip in project.chips" :key="chip"  dark color="#002b36">
+          <v-chip v-for="chip in project.chips" :key="chip" small dark color="#002b36">
             {{ chip }}
           </v-chip>
         </v-card-text>
@@ -120,7 +120,7 @@ export default {
         subtitle:
           "Data science project as part of an internship, where I improved the performance of Natural language processing models",
         body: "A three month internship where I got to learn from some market leaders in NLP note taking in Brisbane. I work on an independent project where I processed messy real world data to extract meaningful insights.",
-        // liveLink: "",
+        liveLink: "https://www.notiv.com/",
         // githubRepoLink: "",
         chips: [
           "Jupyter",
@@ -130,6 +130,10 @@ export default {
           "Data Science",
         ],
         images: [
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/notiv-1.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/notiv-2.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/notiv-3.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/notiv-4.png?raw=true",
           "https://uploads-ssl.webflow.com/5d5f63cfef7f206d8c842f56/5d7eee6e17c02c81c1e07190_logo-large-p-500.png",
         ],
 		show: false
@@ -144,10 +148,13 @@ export default {
         chips: [
           "Vue.js",
           "gRPC",
-          "Protobuf"
+          "Protobuf",
+          "Typescript",
         ],
         images: [
-          "",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/couchers-1.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/couchers-2.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/couchers-3.png?raw=true",
         ],
 		show: false
 	  },
