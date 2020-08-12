@@ -7,6 +7,7 @@
           <v-row>
             <v-carousel show-arrows-on-hover height="700px">
               <v-carousel-item
+              
                 v-for="image in currentProject.images"
                 :key="image"
               >
@@ -32,8 +33,8 @@
         center
       >
         <v-carousel show-arrows-on-hover height="300px">
-          <v-carousel-item v-for="image in project.images" :key="image"  @click="handleClick(project)">
-            <v-img :src="image" ></v-img>
+          <v-carousel-item  v-for="image in project.images" :key="image"  @click="handleClick(project)">
+            <v-img :src="image" eager></v-img>
           </v-carousel-item>
         </v-carousel>
 
@@ -130,10 +131,10 @@ export default {
           "Data Science",
         ],
         images: [
-          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/notiv-1.png?raw=true",
-          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/notiv-2.png?raw=true",
-          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/notiv-3.png?raw=true",
-          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/notiv-4.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/notiv/notiv-1.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/notiv/notiv-2.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/notiv/notiv-3.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/notiv/notiv-4.png?raw=true",
           "https://uploads-ssl.webflow.com/5d5f63cfef7f206d8c842f56/5d7eee6e17c02c81c1e07190_logo-large-p-500.png",
         ],
 		show: false

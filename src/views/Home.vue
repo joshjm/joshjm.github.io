@@ -16,20 +16,7 @@
                   width="90%"
                 />
               </v-row>
-              <v-row justify="center">
-                <v-btn class="mx-4" icon>
-                  <v-icon> mdi-linkedin </v-icon>
-                </v-btn>
-                <v-btn class="mx-4" icon>
-                  <v-icon> mdi-github </v-icon>
-                </v-btn>
-                <v-btn class="mx-4" icon>
-                  <v-icon> mdi-email </v-icon>
-                </v-btn>
-                <v-btn class="mx-4" icon>
-                  <v-icon> mdi-twitter </v-icon>
-                </v-btn>
-              </v-row>
+                <SocialButtons type="dark" />
             </v-col>
             <v-col md="8" cols="12">
               <h1>About me</h1>
@@ -92,13 +79,15 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Timeline from "@/components/Timeline";
 import CommitPlot from "@/components/CommitPlot";
+import SocialButtons from "@/components/SocialButtons";
 export default {
   name: "Home",
   components: {
     Hero,
     Projects,
     Timeline,
-    CommitPlot
+    CommitPlot,
+    SocialButtons
   }
 };
 </script>
