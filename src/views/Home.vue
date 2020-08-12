@@ -16,7 +16,7 @@
                   width="90%"
                 />
               </v-row>
-                <SocialButtons type="dark" />
+              <SocialButtons type="dark" />
             </v-col>
             <v-col md="8" cols="12">
               <h1>About me</h1>
@@ -58,15 +58,37 @@
         <!-- Projects -->
         <v-container>
           <h1>My recent projects</h1>
-              <Projects title="Safe Blues" />
+          <Projects title="Safe Blues" />
         </v-container>
         <v-divider></v-divider>
 
-        <!-- Resume and work history -->
+        <!-- study and work history -->
         <h1>What I've been getting up to</h1>
         <Timeline />
+
         <v-divider></v-divider>
 
+
+
+<v-container>
+          <v-row align="top" justify="space-around">
+            <v-col md="5" cols="12">
+                <!-- Interests -->
+            <h1>How I like to spend my time</h1>
+              <v-img height="300px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.stack.imgur.com%2FtN1xK.png&f=1&nofb=1" />
+            </v-col>
+              <v-divider vertical 
+      inset></v-divider>
+            <v-col md="5" cols="12">
+              <!-- skills -->
+            <h1>My Skills</h1>
+              <v-img height="300px" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.real-statistics.com%2Fwp-content%2Fuploads%2F2012%2F11%2Fhorizontal-box-plot.png&f=1&nofb=1" />
+         
+            </v-col>
+          </v-row>
+        </v-container>
+
+        
         <!-- Contact information -->
       </v-container>
     </section>
@@ -87,8 +109,8 @@ export default {
     Projects,
     Timeline,
     CommitPlot,
-    SocialButtons
-  }
+    SocialButtons,
+  },
 };
 </script>
 <style>
@@ -98,5 +120,8 @@ export default {
 }
 #content {
   background-color: #f5f2e9;
+}
+hr {
+  margin: 30px auto;
 }
 </style>
