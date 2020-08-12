@@ -6,11 +6,13 @@
     <v-container class="inner" :style="positionTextTopPaddingString">
       <v-row align="center" justify="center">
         <v-col class="text-center" cols="12">
-          <h1 class="display-4 font-weight-light mb-4">Joshua McDonald</h1>
+          <h1 class="font-weight-medium">Joshua McDonald</h1>
           <div class="byline">
-          <h4 class="subheading font-weight-thin display-1">
+          <h4 >
             - Science fed coder
           </h4>
+          </div>
+          <div class="social">
           <SocialButtons :dark="true" :light="false" />
           </div>
         </v-col>
@@ -75,11 +77,66 @@ export default {
 .byline {
   animation: fadeIn 0.5s ease-in 2s 1 forwards;
   opacity: 0;
+  padding-bottom: 4vw;
+}
+.social {
+  animation: fadeIn 1s ease-in 2.6s 1 forwards;
+  opacity: 0;
 }
 h1 {
   animation: fadeIn 1s ease-in 1s 1 forwards;
   opacity: 0;
 }
+/* Responsive header sizes */
+h1 {
+  /* Never get smaller than this */
+  font-size: 11vw;
+}
+h4 {
+  /* Never get smaller than this */
+  font-size: 6vw;
+}
+
+@media (min-width:960px) {
+  h1 {
+    font-size: 6.5rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+  .byline {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width:1265px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+  .byline {
+    padding-bottom: 2.3rem;
+  }
+}
+
+@media (min-width:1900px) {
+  h1 {
+   font-size: 10rem;
+  } 
+  h4 {
+   font-size: 3.8rem;
+  } 
+  .byline {
+    padding-bottom: 2.5rem;
+  }
+}
+
+
+
+
+
 h1,
 h4 {
   text-shadow: 0px 0px 2px #002b36, 0px 0px 10px #002b36, 0px 0px 20px #002b36;
@@ -87,7 +144,7 @@ h4 {
   color: #fdf6e3;
 }
 #chevron {
-  animation: fadeIn 2s ease-in 2.5s 1 forwards;
+  animation: fadeIn 2s ease-in 2.9s 1 forwards;
   opacity: 0;
 }
 
