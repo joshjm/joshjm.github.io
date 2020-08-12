@@ -1,42 +1,40 @@
 <template>
-  <v-container fluid maxWidth="800px">
-    <h1>My Recent Daily Github Commits</h1>
+  <v-container>
+    <h1>My latest public github activity:</h1>
     <v-col align="center">
-      <v-col sm="12" md="10" lg="8">
-        <v-sparkline
-          :value="config.value"
-          :labels="config.labels"
-          :gradient="config.gradient"
-          :smooth="config.radius || false"
-          :padding="config.padding"
-          :line-width="config.width"
-          :stroke-linecap="config.lineCap"
-          :gradient-direction="config.gradientDirection"
-        ></v-sparkline>
-      </v-col>
+      <div id="plot" style="margin-top: -80px; margin-bottom: -40px"></div>
     </v-col>
   </v-container>
 </template>
 
 <!-- TODO: generate labels/dates automatically -->
 <script>
-const gradients = [["#2aa198", "#073642"]];
+import Plotly from "plotly.js";
 // import $ from "jquery";
 import axios from "axios";
 export default {
   data: () => ({
     gitURL: "https://api.github.com/users/joshjm/events?per_page=99",
     config: {
-      width: 2,
-      radius: 10,
-      padding: 8,
-      lineCap: "round",
-      gradient: gradients[0],
       labels: [],
       value: [],
-      gradientDirection: "top",
     },
     commitData: null,
+    layout: {
+      paper_bgcolor: "rgba(0,0,0,0)",
+      plot_bgcolor: "rgba(0,0,0,0)",
+      autosize: true,
+      legend: {
+        x: 1,
+        xanchor: "right",
+        y: 1,
+      },
+      yaxis: {
+        title: "Commits",
+      },
+
+    },
+    plotlyConfig: { responsive: true, displayModeBar: false },
   }),
   methods: {
     parseData: function(data) {
@@ -46,8 +44,7 @@ export default {
         const currentDate = this.parseDate(data[eventObject].created_at);
         if (data[eventObject].type == "PushEvent") {
           const numberOfCommits = data[eventObject].payload.commits.length;
-          console.log(currentDate, previousDate, eventObject, numberOfCommits)
-          if ((previousDate !== currentDate) && (eventObject > 0)) {
+          if (previousDate !== currentDate && eventObject > 0) {
             // if the date changes, push sums and reset
             this.config.labels.unshift(previousDate);
             this.config.value.unshift(commitSum);
@@ -63,7 +60,24 @@ export default {
       // and add the final element
       this.config.labels.unshift(previousDate);
       this.config.value.unshift(commitSum);
-      console.log(this.config.labels, this.config.value)
+      Plotly.newPlot(
+        "plot",
+        [
+          {
+            x: this.config.labels,
+            y: this.config.value,
+            name: "Commits",
+            line: {
+              color: "#2aa198",
+              shape: "spline",
+              width: 4,
+            },
+            mode: "lines",
+          },
+        ],
+        this.layout,
+        this.plotlyConfig
+      );
     },
     parseDate: function(dateString) {
       return dateString.split("T")[0];
