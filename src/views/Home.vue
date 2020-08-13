@@ -81,7 +81,7 @@
               <h1>My Skills</h1>
               <v-img
                 height="300px"
-                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.real-statistics.com%2Fwp-content%2Fuploads%2F2012%2F11%2Fhorizontal-box-plot.png&f=1&nofb=1"
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fla.mathworks.com%2Fmatlabcentral%2Fmlc-downloads%2Fdownloads%2F98ee7702-abae-47b3-975d-419dad136b99%2F086389c6-0808-4cbb-9fc3-cf0358421297%2Fimages%2Fscreenshot.png&f=1&nofb=1"
               />
             </v-col>
           </v-row>
