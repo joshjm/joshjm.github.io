@@ -2,6 +2,8 @@
   <v-app>
     <!-- put the nav-bar here if i end up wanting one -->
     <!-- <Navbar /> -->
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@500;700&display=swap" rel="stylesheet">
+
     <v-main>
       <router-view />
     </v-main>
