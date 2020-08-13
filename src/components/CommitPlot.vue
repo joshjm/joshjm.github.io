@@ -2,7 +2,7 @@
   <v-container>
     <h1>My latest public github activity:</h1>
     <v-col align="center">
-      <div id="plot" style="margin-top: -80px; margin-bottom: -40px"></div>
+      <div id="plot" ></div>
     </v-col>
   </v-container>
 </template>
@@ -21,7 +21,8 @@ export default {
     },
     commitData: null,
     layout: {
-      paper_bgcolor: "rgba(0,0,0,0)",
+      paper_bgcolor: "rgba(0,0,0,0)",  margin: {l: 0, r: 0, b: 0, t: 0},
+
       plot_bgcolor: "rgba(0,0,0,0)",
       autosize: true,
       legend: {

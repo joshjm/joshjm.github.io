@@ -4,7 +4,7 @@
       <v-vanta effect="net" :options="options"></v-vanta>
     </div>
     <v-container class="inner" :style="positionTextTopPaddingString">
-      <v-row align="center" justify="center">
+      <v-row  justify="center">
         <v-col class="text-center" cols="12">
           <h1 class="font-weight-medium">Joshua McDonald</h1>
           <div class="byline">
