@@ -13,7 +13,7 @@
           </h4>
           </div>
           <div class="social">
-          <SocialButtons :dark="true" :light="false" />
+          <SocialButtons :dark="true" :light="false" :size="iconSize" />
           </div>
         </v-col>
       </v-row>
@@ -47,6 +47,7 @@ export default {
       },
       styleString: `height: ${window.innerHeight}px`,
       positionTextTopPaddingString: `top: ${window.innerHeight / 2 - 200}px`,
+      iconSize: 40
     };
   },
 };
@@ -142,6 +143,7 @@ h4 {
   text-shadow: 0px 0px 2px #002b36, 0px 0px 10px #002b36, 0px 0px 20px #002b36;
   text-shadow: 0px 0px 4px #000000;
   color: #fdf6e3;
+  font-family: 'Catamaran', sans-serif;
 }
 #chevron {
   animation: fadeIn 2s ease-in 2.9s 1 forwards;
