@@ -7,7 +7,7 @@
       <v-container>
         <!-- About me -->
         <v-container>
-          <v-row align="center">
+          <v-row justify="center">
             <v-col md="4" cols="12">
               <v-row justify="center">
                 <v-img
@@ -68,27 +68,25 @@
 
         <v-divider></v-divider>
 
-
-
-<v-container>
-          <v-row align="top" justify="space-around">
+        <v-container>
+          <v-row justify="space-around">
             <v-col md="5" cols="12">
-                <!-- Interests -->
-            <h1>How I like to spend my time</h1>
-              <v-img height="300px" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.stack.imgur.com%2FtN1xK.png&f=1&nofb=1" />
+              <!-- Interests -->
+              <h1>How I like to spend my time</h1>
+              <TimePiePlot />
             </v-col>
-              <v-divider vertical 
-      inset></v-divider>
+            <v-divider vertical inset></v-divider>
             <v-col md="5" cols="12">
               <!-- skills -->
-            <h1>My Skills</h1>
-              <v-img height="300px" src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.real-statistics.com%2Fwp-content%2Fuploads%2F2012%2F11%2Fhorizontal-box-plot.png&f=1&nofb=1" />
-         
+              <h1>My Skills</h1>
+              <v-img
+                height="300px"
+                src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.real-statistics.com%2Fwp-content%2Fuploads%2F2012%2F11%2Fhorizontal-box-plot.png&f=1&nofb=1"
+              />
             </v-col>
           </v-row>
         </v-container>
 
-        
         <!-- Contact information -->
       </v-container>
     </section>
@@ -101,6 +99,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Timeline from "@/components/Timeline";
 import CommitPlot from "@/components/CommitPlot";
+import TimePiePlot from "@/components/TimePiePlot";
 import SocialButtons from "@/components/SocialButtons";
 export default {
   name: "Home",
@@ -109,6 +108,7 @@ export default {
     Projects,
     Timeline,
     CommitPlot,
+    TimePiePlot,
     SocialButtons,
   },
 };
