@@ -2,7 +2,7 @@
   <v-container>
     <h1>My latest public github activity:</h1>
     <v-col align="center">
-      <div id="plot" ></div>
+      <div id="commitPlotId"></div>
     </v-col>
   </v-container>
 </template>
@@ -15,25 +15,22 @@ import axios from "axios";
 export default {
   data: () => ({
     gitURL: "https://api.github.com/users/joshjm/events?per_page=99",
-    config: {
+    data: {
       labels: [],
       value: [],
     },
-    commitData: null,
     layout: {
-      paper_bgcolor: "rgba(0,0,0,0)",  margin: {l: 0, r: 0, b: 0, t: 0},
-
+      paper_bgcolor: "rgba(0,0,0,0)",
+      margin: { r: 0, b: 30, t: 0 },
       plot_bgcolor: "rgba(0,0,0,0)",
       autosize: true,
-      legend: {
-        x: 1,
-        xanchor: "right",
-        y: 1,
+      xaxis: {
+        showgrid: false,
       },
       yaxis: {
+        showgrid: false,
         title: "Commits",
       },
-
     },
     plotlyConfig: { responsive: true, displayModeBar: false },
   }),
@@ -47,8 +44,8 @@ export default {
           const numberOfCommits = data[eventObject].payload.commits.length;
           if (previousDate !== currentDate && eventObject > 0) {
             // if the date changes, push sums and reset
-            this.config.labels.unshift(previousDate);
-            this.config.value.unshift(commitSum);
+            this.data.labels.unshift(previousDate);
+            this.data.value.unshift(commitSum);
             commitSum = 0;
             commitSum += numberOfCommits;
           } else {
@@ -59,19 +56,18 @@ export default {
         }
       }
       // and add the final element
-      this.config.labels.unshift(previousDate);
-      this.config.value.unshift(commitSum);
+      this.data.labels.unshift(previousDate);
+      this.data.value.unshift(commitSum);
       Plotly.newPlot(
-        "plot",
+        "commitPlotId",
         [
           {
-            x: this.config.labels,
-            y: this.config.value,
-            name: "Commits",
+            x: this.data.labels,
+            y: this.data.value,
             line: {
               color: "#2aa198",
-              shape: "spline",
-              width: 4,
+              shape: "vh",
+              width: 5,
             },
             mode: "lines",
           },
