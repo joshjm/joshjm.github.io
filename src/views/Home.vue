@@ -11,9 +11,12 @@
             <v-col md="4" cols="12">
               <v-row justify="center">
                 <v-img
-                  src="@/assets/profile.jpg"
+                id="profile"
+                  src="@/assets/profile-blurred-background.jpg"
                   class="circle-img"
                   width="90%"
+                  alt="profile"
+                  margin="10px"
                 />
               </v-row>
               <SocialButtons type="dark" />
@@ -123,5 +126,9 @@ export default {
 }
 hr {
   margin: 30px auto;
+}
+
+#profile {
+  margin: 20px;
 }
 </style>
