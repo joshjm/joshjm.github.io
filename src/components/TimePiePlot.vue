@@ -87,6 +87,6 @@ export default {
 
 <style>
 #piePlot {
-  margin: -40px 0 -40px;
+  /* margin: -40px 0 -40px; */
 }
 </style>
