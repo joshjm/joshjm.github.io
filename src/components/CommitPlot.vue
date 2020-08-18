@@ -67,9 +67,9 @@ export default {
             line: {
               color: "#2aa198",
               shape: "vh",
-              width: 5,
+              width: 6,
             },
-            mode: "lines",
+            // mode: "bar",
           },
         ],
         this.layout,
