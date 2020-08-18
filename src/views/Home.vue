@@ -76,16 +76,16 @@
             <v-col md="5" cols="12">
               <!-- Interests -->
               <h1>How I like to spend my time</h1>
+              <p>Click on an item to learn more</p>
               <TimePiePlot />
             </v-col>
             <v-divider vertical inset></v-divider>
             <v-col md="5" cols="12">
               <!-- skills -->
               <h1>My Skills</h1>
-              <v-img
-                height="300px"
-                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fla.mathworks.com%2Fmatlabcentral%2Fmlc-downloads%2Fdownloads%2F98ee7702-abae-47b3-975d-419dad136b99%2F086389c6-0808-4cbb-9fc3-cf0358421297%2Fimages%2Fscreenshot.png&f=1&nofb=1"
-              />
+              <p>Select an area on this plot for a finer-grained understanding of my skills, and how long I have been using these technologies.</p>
+              <SkillsPlot />
+              
             </v-col>
           </v-row>
         </v-container>
@@ -104,6 +104,7 @@ import Timeline from "@/components/Timeline";
 import CommitPlot from "@/components/CommitPlot";
 import TimePiePlot from "@/components/TimePiePlot";
 import SocialButtons from "@/components/SocialButtons";
+import SkillsPlot from "@/components/SkillsPlot";
 export default {
   name: "Home",
   components: {
@@ -113,6 +114,7 @@ export default {
     CommitPlot,
     TimePiePlot,
     SocialButtons,
+    SkillsPlot
   },
 };
 </script>
