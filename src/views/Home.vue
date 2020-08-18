@@ -12,8 +12,8 @@
               <v-row justify="center">
                 <v-img
                 id="profile"
-                  src="@/assets/profile-blurred-background.jpg"
-                  class="circle-img"
+                  src="@/assets/profile.jpg"
+                  class="circle-img elevation-3"
                   width="90%"
                   alt="profile"
                   margin="10px"
