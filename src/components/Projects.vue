@@ -162,15 +162,23 @@ export default {
 	   {
         title: "Correlated Errors on the Toric Code",
         subtitle:
-          "",
-        body: "",
-        liveLink: "",
-        githubRepoLink: "",
+          "An honours quantum computing research project in quantum error correction",
+        body: "This project implemented and investigated the performance of the Toric Code for correcting errors in quantum memories. This was a novel implementation making use of dijkstra's path finding, and employing a host of data science tools including advanced mathematical and statistical methods. This project also made heavy use of high performance computing and leveraged UQ's computing cluster.  ",
+        // liveLink: "",
+        // githubRepoLink: "",
         chips: [
-          "",
+          "HPC", "parallel computing", "Data-science", "Statistics", "Physics", "Quantum computing"
         ],
         images: [
-          "",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/heatplot.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/decoder-comparison.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/expected-walk-lengths.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/pdf.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/rates.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/schematic.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/steps.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/toriccode.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/couchers/toriccode2.png?raw=true",
         ],
 		show: false
 	  },
