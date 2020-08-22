@@ -185,30 +185,31 @@ export default {
 	   {
         title: "BlackBook.ai Code Test",
         subtitle:
-          "",
-        body: "",
+          "Docker and tensorflow serving ",
+        body: "This project was a code test, where I build a node frontend which communicated with a tensorflow serving backend. This app utilized dockerfiles and a docker-compose to manage two containers, with a cat/dog image classifier that I trained running as a backend via the TFX API.",
         liveLink: "",
-        githubRepoLink: "",
+        githubRepoLink: "https://github.com/joshjm/BlackBookAI/tree/master/application/frontend",
         chips: [
-          "",
+          "Tensorflow", "Docker", "Machine Learning", "Node.js",
         ],
         images: [
-          "",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/blackbook/bb.png?raw=true",
         ],
 		show: false
 	  },
 	   {
         title: "Covid Co-op",
         subtitle:
-          "",
-        body: "",
-        liveLink: "",
-        githubRepoLink: "",
+          "Rails and react local marketplace with google maps API",
+        body: "This was a group project completed as part of General Assembly. My main focus on this project was integrating google maps apis, converting string address's to GPS, and finding distances between GPS coords to display distances between products and a customer. My other main task was managing the team and helping un-block other team members.",
+        liveLink: "https://joshjm.github.io/Covid-Co-op/#/",
+        githubRepoLink: "https://github.com/joshjm/Covid-Co-op",
         chips: [
-          "",
+          "Ruby on Rails", "React","Google maps", "Teamwork",
         ],
         images: [
-          "",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/covid/main.png?raw=true,
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/covid/products.png?raw=true,
         ],
 		show: false
 	  },
