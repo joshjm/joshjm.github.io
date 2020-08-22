@@ -120,7 +120,7 @@ export default {
         title: "Notiv",
         subtitle:
           "Data science project as part of an internship, where I improved the performance of Natural language processing models",
-        body: "A three month internship where I got to learn from some market leaders in NLP note taking in Brisbane. I work on an independent project where I processed messy real world data to extract meaningful insights.",
+        body: "A three month internship where I got to learn from some market leaders in NLP note taking in Brisbane. I work on an independent project where I processed messy real world data to extract meaningful insights. I made strong use of pandas for data cleaning, exploration and creating a pipeline for larger datasets.",
         liveLink: "https://www.notiv.com/",
         // githubRepoLink: "",
         chips: [
