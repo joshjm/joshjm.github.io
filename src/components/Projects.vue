@@ -208,8 +208,8 @@ export default {
           "Ruby on Rails", "React","Google maps", "Teamwork",
         ],
         images: [
-          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/covid/main.png?raw=true,
-          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/covid/products.png?raw=true,
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/covid/main.png?raw=true",
+          "https://github.com/joshjm/joshjm.github.io/blob/master/src/assets/covid/products.png?raw=true",
         ],
 		show: false
 	  },
